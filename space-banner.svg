@@ -1,131 +1,307 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="100%" height="260">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 340" width="100%" height="340">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0D1117" />
-      <stop offset="50%" stop-color="#11161F" />
-      <stop offset="100%" stop-color="#0D1117" />
-    </linearGradient>
-
-    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0" />
-      <stop offset="30%" stop-color="#7C5CFF" stop-opacity="0.9" />
-      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="1" />
-      <stop offset="70%" stop-color="#8A6BFF" stop-opacity="0.9" />
-      <stop offset="100%" stop-color="#8A6BFF" stop-opacity="0" />
-    </linearGradient>
-
-    <radialGradient id="holeGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="40%" stop-color="#000000" stop-opacity="1" />
-      <stop offset="52%" stop-color="#7C5CFF" stop-opacity="0.6" />
-      <stop offset="70%" stop-color="#8A6BFF" stop-opacity="0.15" />
-      <stop offset="100%" stop-color="#0D1117" stop-opacity="0" />
+    <!-- Палитра «Горизонт событий» из main.cpp -->
+    <radialGradient id="nebulaWarm" cx="76%" cy="38%" r="55%">
+      <stop offset="0%" stop-color="#FF8A38" stop-opacity="0.22" />
+      <stop offset="45%" stop-color="#FF8A38" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#07080B" stop-opacity="0" />
     </radialGradient>
 
-    <!-- Сетка глубокого космоса -->
-    <pattern id="grid" width="45" height="45" patternUnits="userSpaceOnUse">
-      <path d="M 45 0 L 0 0 0 45" fill="none" stroke="#161B22" stroke-width="1" />
-    </pattern>
+    <radialGradient id="nebulaCold" cx="18%" cy="85%" r="50%">
+      <stop offset="0%" stop-color="#285CA0" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#07080B" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Glow вокруг чёрной дыры -->
+    <radialGradient id="bhGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFBA78" stop-opacity="0.32" />
+      <stop offset="35%" stop-color="#FF8A38" stop-opacity="0.16" />
+      <stop offset="70%" stop-color="#FF8A38" stop-opacity="0.04" />
+      <stop offset="100%" stop-color="#07080B" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Доплеровское усиление (левая сторона ярче и горячее: #FFF6E2 -> #FFBA78 -> #FF8A38) -->
+    <linearGradient id="dopplerDisk" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF8A38" stop-opacity="0.05" />
+      <stop offset="15%" stop-color="#FFF6E2" stop-opacity="0.98" />
+      <stop offset="38%" stop-color="#FFBA78" stop-opacity="0.88" />
+      <stop offset="68%" stop-color="#FF8A38" stop-opacity="0.42" />
+      <stop offset="90%" stop-color="#FF8A38" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#FF8A38" stop-opacity="0.02" />
+    </linearGradient>
+
+    <linearGradient id="dopplerArc" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF8A38" stop-opacity="0.1" />
+      <stop offset="25%" stop-color="#FFF0D6" stop-opacity="0.92" />
+      <stop offset="55%" stop-color="#FFBA78" stop-opacity="0.65" />
+      <stop offset="85%" stop-color="#FF8A38" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#FF8A38" stop-opacity="0.05" />
+    </linearGradient>
+
+    <linearGradient id="photonRing" x1="0%" y1="30%" x2="100%" y2="70%">
+      <stop offset="0%" stop-color="#FFF0D6" stop-opacity="0.98" />
+      <stop offset="45%" stop-color="#FFBA78" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#FF8A38" stop-opacity="0.22" />
+    </linearGradient>
+
+    <!-- Блик по верхней кромке Panel() -->
+    <linearGradient id="topSheen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.20" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.02" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.20" />
+    </linearGradient>
+
+    <!-- Хвост метеора -->
+    <linearGradient id="meteorTail" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFECD6" stop-opacity="0" />
+      <stop offset="100%" stop-color="#FFECD6" stop-opacity="0.75" />
+    </linearGradient>
+
+    <clipPath id="upperHalf">
+      <rect x="-260" y="-200" width="520" height="200" />
+    </clipPath>
+    <clipPath id="lowerHalf">
+      <rect x="-260" y="0" width="520" height="200" />
+    </clipPath>
+    <clipPath id="bannerClip">
+      <rect x="1" y="1" width="918" height="338" rx="4" />
+    </clipPath>
   </defs>
 
-  <!-- Фон и геометрическая сетка -->
-  <rect width="900" height="260" rx="12" fill="url(#bgGrad)" stroke="#161B22" stroke-width="2" />
-  <rect width="900" height="260" rx="12" fill="url(#grid)" opacity="0.6" />
+  <g clip-path="url(#bannerClip)">
+    <!-- Фон Rgb(7, 8, 11) + туманности из DrawBackground() -->
+    <rect width="920" height="340" fill="#07080B" />
+    <rect width="920" height="340" fill="url(#nebulaWarm)" />
+    <rect width="920" height="340" fill="url(#nebulaCold)" />
 
-  <!-- Звёзды с резким переключением яркости и масштаба -->
-  <g fill="#FFFFFF">
-    <circle cx="65" cy="40" r="1.5">
-      <animate attributeName="opacity" values="0.1;1;0.1" dur="1.8s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="195" cy="55" r="2" fill="#8A6BFF">
-      <animate attributeName="opacity" values="1;0.1;1" dur="2.2s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="140" cy="215" r="1.5">
-      <animate attributeName="opacity" values="0.2;0.9;0.2" dur="1.5s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="285" cy="200" r="2" fill="#7C5CFF">
-      <animate attributeName="opacity" values="0.1;1;0.1" dur="2.5s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="635" cy="45" r="2" fill="#8A6BFF">
-      <animate attributeName="opacity" values="0.2;1;0.2" dur="1.7s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="755" cy="65" r="1.5">
-      <animate attributeName="opacity" values="1;0.1;1" dur="2.1s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="695" cy="215" r="1.5">
-      <animate attributeName="opacity" values="0.1;0.9;0.1" dur="1.9s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="835" cy="195" r="2" fill="#7C5CFF">
-      <animate attributeName="opacity" values="0.8;0.1;0.8" dur="2.4s" repeatCount="indefinite" />
-    </circle>
-  </g>
+    <!-- Звёздное поле с параллакс-дрейфом (InitStars) -->
+    <g fill="#FFF4E4">
+      <g>
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="60 0" dur="38s" repeatCount="indefinite" />
+        <circle cx="48" cy="78" r="0.8" opacity="0.35" />
+        <circle cx="135" cy="140" r="1.1" opacity="0.5">
+          <animate attributeName="opacity" values="0.25;0.75;0.25" dur="3.4s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="220" cy="68" r="0.7" opacity="0.3" />
+        <circle cx="310" cy="195" r="1.2" opacity="0.45">
+          <animate attributeName="opacity" values="0.6;0.2;0.6" dur="4.1s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="395" cy="92" r="0.9" opacity="0.35" />
+        <circle cx="470" cy="270" r="1.0" opacity="0.4" />
+        <circle cx="530" cy="74" r="0.8" opacity="0.3" />
+        <circle cx="845" cy="96" r="1.1" opacity="0.5">
+          <animate attributeName="opacity" values="0.2;0.7;0.2" dur="2.9s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="870" cy="260" r="0.9" opacity="0.35" />
+      </g>
 
-  <!-- Левый изометрический 3D-куб с открытыми гранями (левитирует) -->
-  <g transform="translate(110, 125)">
-    <animateTransform attributeName="transform" type="translate" values="110,120; 110,134; 110,120" dur="4s" repeatCount="indefinite" />
-    <!-- Верхняя грань -->
-    <polygon points="0,-28 24,-14 0,0 -24,-14" fill="#161B22" stroke="#7C5CFF" stroke-width="1.5" />
-    <!-- Левая грань -->
-    <polygon points="-24,-14 0,0 0,28 -24,14" fill="#0D1117" stroke="#7C5CFF" stroke-width="1.5" />
-    <!-- Правая грань (открытая с внутренним каркасом) -->
-    <polygon points="0,0 24,-14 24,14 0,28" fill="none" stroke="#8A6BFF" stroke-width="1.5" stroke-dasharray="4,2" />
-    <line x1="0" y1="0" x2="12" y2="7" stroke="#7C5CFF" stroke-width="1" opacity="0.6" />
-  </g>
-
-  <!-- Правый изометрический 3D-куб с открытыми гранями (левитирует в противофазе) -->
-  <g transform="translate(790, 125)">
-    <animateTransform attributeName="transform" type="translate" values="790,134; 790,120; 790,134" dur="4s" repeatCount="indefinite" />
-    <polygon points="0,-28 24,-14 0,0 -24,-14" fill="#161B22" stroke="#8A6BFF" stroke-width="1.5" />
-    <polygon points="-24,-14 0,0 0,28 -24,14" fill="none" stroke="#7C5CFF" stroke-width="1.5" stroke-dasharray="4,2" />
-    <polygon points="0,0 24,-14 24,14 0,28" fill="#0D1117" stroke="#8A6BFF" stroke-width="1.5" />
-  </g>
-
-  <!-- Вращающиеся гексагоны -->
-  <g>
-    <polygon points="230,65 240,59 250,65 250,77 240,83 230,77" fill="none" stroke="#7C5CFF" stroke-width="1.2" opacity="0.45">
-      <animateTransform attributeName="transform" type="rotate" from="0 240 71" to="360 240 71" dur="18s" repeatCount="indefinite" />
-    </polygon>
-    <polygon points="650,180 662,173 674,180 674,194 662,201 650,194" fill="none" stroke="#8A6BFF" stroke-width="1.2" opacity="0.45">
-      <animateTransform attributeName="transform" type="rotate" from="360 662 187" to="0 662 187" dur="15s" repeatCount="indefinite" />
-    </polygon>
-  </g>
-
-  <!-- ЦЕНТРАЛЬНАЯ ЧЁРНАЯ ДЫРА (Вращающиеся орбитальные контуры) -->
-  <g transform="translate(450, 125)">
-    <!-- Гравитационное гало -->
-    <circle cx="0" cy="0" r="105" fill="url(#holeGlow)" />
-
-    <!-- Внешнее орбитальное кольцо (вращается по часовой) -->
-    <g>
-      <circle cx="0" cy="0" r="92" fill="none" stroke="#7C5CFF" stroke-width="1.5" stroke-dasharray="28 14 8 14" opacity="0.7" />
-      <circle cx="92" cy="0" r="3" fill="#8A6BFF" />
-      <circle cx="-92" cy="0" r="3" fill="#8A6BFF" />
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite" />
+      <!-- Крупные звёзды (s.size > 1.55f) с крестообразным бликом -->
+      <g transform="translate(345, 76)">
+        <animate attributeName="opacity" values="0.45;0.95;0.45" dur="3.2s" repeatCount="indefinite" />
+        <circle cx="0" cy="0" r="1.6" fill="#FFF4E4" />
+        <line x1="-6" y1="0" x2="6" y2="0" stroke="#FFF4E4" stroke-width="1" opacity="0.4" />
+        <line x1="0" y1="-6" x2="0" y2="6" stroke="#FFF4E4" stroke-width="1" opacity="0.4" />
+      </g>
+      <g transform="translate(835, 222)">
+        <animate attributeName="opacity" values="0.85;0.35;0.85" dur="4.0s" repeatCount="indefinite" />
+        <circle cx="0" cy="0" r="1.7" fill="#FFF4E4" />
+        <line x1="-6" y1="0" x2="6" y2="0" stroke="#FFF4E4" stroke-width="1" opacity="0.4" />
+        <line x1="0" y1="-6" x2="0" y2="6" stroke="#FFF4E4" stroke-width="1" opacity="0.4" />
+      </g>
+      <g transform="translate(495, 198)">
+        <animate attributeName="opacity" values="0.3;0.85;0.3" dur="3.6s" repeatCount="indefinite" />
+        <circle cx="0" cy="0" r="1.5" fill="#FFF4E4" />
+        <line x1="-5" y1="0" x2="5" y2="0" stroke="#FFF4E4" stroke-width="1" opacity="0.35" />
+        <line x1="0" y1="-5" x2="0" y2="5" stroke="#FFF4E4" stroke-width="1" opacity="0.35" />
+      </g>
     </g>
 
-    <!-- Среднее кольцо аккреции (вращается против часовой быстрее) -->
-    <g>
-      <circle cx="0" cy="0" r="76" fill="none" stroke="#8A6BFF" stroke-width="2" stroke-dasharray="55 25" opacity="0.85" />
-      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="7s" repeatCount="indefinite" />
+    <!-- Редкий метеор из DrawBackground() -->
+    <g transform="rotate(32 420 80)">
+      <line x1="-110" y1="0" x2="0" y2="0" stroke="url(#meteorTail)" stroke-width="1.6" stroke-linecap="round">
+        <animate attributeName="x1" values="120;780;780" keyTimes="0;0.22;1" dur="7.5s" repeatCount="indefinite" />
+        <animate attributeName="x2" values="230;890;890" keyTimes="0;0.22;1" dur="7.5s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0;0.85;0;0" keyTimes="0;0.11;0.22;1" dur="7.5s" repeatCount="indefinite" />
+      </line>
     </g>
 
-    <!-- Внутреннее фотонное кольцо (быстрое вращение) -->
-    <g>
-      <circle cx="0" cy="0" r="61" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="18 35" opacity="0.9" />
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4s" repeatCount="indefinite" />
+    <!-- ================================================================= -->
+    <!-- ШАПКА ОКНА (DrawTitleBar: H = 44, знак затмения с орбитой)         -->
+    <!-- ================================================================= -->
+    <rect x="0" y="0" width="920" height="44" fill="#07080B" fill-opacity="0.88" />
+    <line x1="0" y1="44" x2="920" y2="44" stroke="#FFF2E0" stroke-opacity="0.10" stroke-width="1" />
+
+    <!-- Знак затмения с вращающимся спутником на орбите -->
+    <g transform="translate(32, 22)">
+      <circle cx="0" cy="0" r="7.5" fill="#FF8A38" />
+      <circle cx="2.6" cy="-1.6" r="7.0" fill="#07080B" />
+      <circle cx="0" cy="0" r="12.5" fill="none" stroke="#FFBA78" stroke-opacity="0.35" stroke-width="1" />
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5.5s" repeatCount="indefinite" />
+        <circle cx="12.5" cy="0" r="1.8" fill="#FFBA78" />
+      </g>
     </g>
 
-    <!-- Чёрная сфера (Горизонт событий) -->
-    <circle cx="0" cy="0" r="54" fill="#05070A" stroke="#7C5CFF" stroke-width="2" />
-    <circle cx="0" cy="0" r="50" fill="#000000" />
+    <text x="58" y="26" font-family="Consolas, &#39;Fira Code&#39;, monospace" font-size="13" font-weight="600" fill="#E9E4DA" letter-spacing="3.4">QYPXR</text>
+    <text x="122" y="26" font-family="Consolas, &#39;Fira Code&#39;, monospace" font-size="13" fill="#88837C" letter-spacing="3.4">WORKSPACE</text>
 
-    <!-- Горизонтальный луч аккреционного диска (пульсирует по ширине) -->
-    <ellipse cx="0" cy="0" rx="195" ry="12" fill="none" stroke="url(#purpleGrad)" stroke-width="2.5" transform="rotate(-5)">
-      <animate attributeName="rx" values="185;210;185" dur="3s" repeatCount="indefinite" />
-    </ellipse>
-    <line x1="-230" y1="0" x2="230" y2="0" stroke="url(#purpleGrad)" stroke-width="2" transform="rotate(-5)" />
+    <!-- Кнопки окна справа вверху (свернуть, развернуть, закрыть) -->
+    <line x1="814" y1="22" x2="825" y2="22" stroke="#E9E4DA" stroke-opacity="0.7" stroke-width="1.5" />
+    <rect x="854.5" y="16.5" width="11" height="11" rx="2" fill="none" stroke="#E9E4DA" stroke-opacity="0.7" stroke-width="1.5" />
+    <g transform="translate(902, 22)" stroke="#E9E4DA" stroke-opacity="0.7" stroke-width="1.5">
+      <line x1="-4.5" y1="-4.5" x2="4.5" y2="4.5" />
+      <line x1="4.5" y1="-4.5" x2="-4.5" y2="4.5" />
+    </g>
+
+    <!-- ================================================================= -->
+    <!-- ЧЁРНАЯ ДЫРА СПРАВА (DrawBlackHole: R=58, tilt=-11.5 deg)          -->
+    <!-- ================================================================= -->
+    <g transform="translate(685, 182)">
+      <!-- Мягкое янтарное гало -->
+      <circle cx="0" cy="0" r="210" fill="url(#bhGlow)">
+        <animate attributeName="r" values="200;220;200" dur="4.5s" repeatCount="indefinite" />
+      </circle>
+
+      <!-- Покачивание оси наклона (tilt = -0.20f + sinf(t*0.25f)*0.02f) -->
+      <g transform="rotate(-11.5)">
+        <animateTransform attributeName="transform" type="rotate" values="-12.5;-10.2;-12.5" dur="7s" repeatCount="indefinite" />
+
+        <!-- kind 2: Верхняя гравитационно-линзированная дуга -->
+        <g clip-path="url(#upperHalf)">
+          <ellipse cx="0" cy="0" rx="64" ry="60" fill="none" stroke="url(#dopplerArc)" stroke-width="2.4" />
+          <ellipse cx="0" cy="0" rx="76" ry="68" fill="none" stroke="url(#dopplerArc)" stroke-width="2.0" opacity="0.8" />
+          <ellipse cx="0" cy="0" rx="90" ry="77" fill="none" stroke="url(#dopplerArc)" stroke-width="1.6" opacity="0.55" />
+          <ellipse cx="0" cy="0" rx="106" ry="86" fill="none" stroke="url(#dopplerArc)" stroke-width="1.2" opacity="0.35" />
+          <ellipse cx="0" cy="0" rx="122" ry="95" fill="none" stroke="url(#dopplerArc)" stroke-width="1.0" opacity="0.20" />
+        </g>
+
+        <!-- kind 3: Нижняя слабая линзированная дуга -->
+        <g clip-path="url(#lowerHalf)">
+          <ellipse cx="0" cy="0" rx="64" ry="59" fill="none" stroke="url(#dopplerArc)" stroke-width="1.8" opacity="0.45" />
+          <ellipse cx="0" cy="0" rx="78" ry="63" fill="none" stroke="url(#dopplerArc)" stroke-width="1.4" opacity="0.30" />
+          <ellipse cx="0" cy="0" rx="94" ry="67" fill="none" stroke="url(#dopplerArc)" stroke-width="1.1" opacity="0.18" />
+        </g>
+
+        <!-- kind 0: Задняя половина плоского аккреционного диска -->
+        <g clip-path="url(#upperHalf)">
+          <ellipse cx="0" cy="0" rx="82" ry="15.5" fill="none" stroke="url(#dopplerDisk)" stroke-width="2.6" />
+          <ellipse cx="0" cy="0" rx="102" ry="19.4" fill="none" stroke="url(#dopplerDisk)" stroke-width="2.2" opacity="0.85" />
+          <ellipse cx="0" cy="0" rx="124" ry="23.5" fill="none" stroke="url(#dopplerDisk)" stroke-width="1.8" opacity="0.65" />
+          <ellipse cx="0" cy="0" rx="146" ry="27.7" fill="none" stroke="url(#dopplerDisk)" stroke-width="1.4" opacity="0.45" />
+        </g>
+
+        <!-- Тень чёрной дыры Rgb(3, 3, 4) + тонкий ореол ACCENT_HI -->
+        <circle cx="0" cy="0" r="61" fill="none" stroke="#FFBA78" stroke-opacity="0.12" stroke-width="5" />
+        <circle cx="0" cy="0" r="57" fill="#030304" />
+
+        <!-- Фотонное кольцо с эффектом Доплера (левый край горячий #FFF0D6) -->
+        <circle cx="0" cy="0" r="57.5" fill="none" stroke="url(#photonRing)" stroke-width="1.8">
+          <animate attributeName="stroke-width" values="1.6;2.3;1.6" dur="2.6s" repeatCount="indefinite" />
+        </circle>
+
+        <!-- kind 1: Передняя половина аккреционного диска (перекрывает горизонт событий снизу) -->
+        <g clip-path="url(#lowerHalf)">
+          <ellipse cx="0" cy="0" rx="70" ry="13.3" fill="none" stroke="url(#dopplerDisk)" stroke-width="3.0" />
+          <ellipse cx="0" cy="0" rx="84" ry="16.0" fill="none" stroke="url(#dopplerDisk)" stroke-width="2.6" />
+          <ellipse cx="0" cy="0" rx="100" ry="19.0" fill="none" stroke="url(#dopplerDisk)" stroke-width="2.3" opacity="0.92" />
+          <ellipse cx="0" cy="0" rx="118" ry="22.4" fill="none" stroke="url(#dopplerDisk)" stroke-width="2.0" opacity="0.78" />
+          <ellipse cx="0" cy="0" rx="138" ry="26.2" fill="none" stroke="url(#dopplerDisk)" stroke-width="1.6" opacity="0.58" />
+          <ellipse cx="0" cy="0" rx="160" ry="30.4" fill="none" stroke="url(#dopplerDisk)" stroke-width="1.3" opacity="0.38" />
+          <ellipse cx="0" cy="0" rx="182" ry="34.5" fill="none" stroke="url(#dopplerDisk)" stroke-width="1.0" opacity="0.22" />
+
+          <!-- Вращающиеся потоки плазмы внутри аккреционного диска (sw = sinf(am*5 - t*speed)) -->
+          <ellipse cx="0" cy="0" rx="92" ry="17.5" fill="none" stroke="#FFF6E2" stroke-width="2.2" stroke-dasharray="28 45 18 55" stroke-linecap="round" opacity="0.85">
+            <animate attributeName="stroke-dashoffset" from="292" to="0" dur="2.2s" repeatCount="indefinite" />
+          </ellipse>
+          <ellipse cx="0" cy="0" rx="112" ry="21.3" fill="none" stroke="#FFBA78" stroke-width="1.8" stroke-dasharray="35 60 22 70" stroke-linecap="round" opacity="0.75">
+            <animate attributeName="stroke-dashoffset" from="374" to="0" dur="3.1s" repeatCount="indefinite" />
+          </ellipse>
+          <ellipse cx="0" cy="0" rx="134" ry="25.5" fill="none" stroke="#FF8A38" stroke-width="1.5" stroke-dasharray="40 85 25 90" stroke-linecap="round" opacity="0.65">
+            <animate attributeName="stroke-dashoffset" from="480" to="0" dur="4.2s" repeatCount="indefinite" />
+          </ellipse>
+        </g>
+
+        <!-- Задние вращающиеся потоки плазмы -->
+        <g clip-path="url(#upperHalf)">
+          <ellipse cx="0" cy="0" rx="92" ry="17.5" fill="none" stroke="#FFF6E2" stroke-width="1.8" stroke-dasharray="28 45 18 55" stroke-linecap="round" opacity="0.6">
+            <animate attributeName="stroke-dashoffset" from="0" to="292" dur="2.2s" repeatCount="indefinite" />
+          </ellipse>
+          <ellipse cx="0" cy="0" rx="116" ry="22.0" fill="none" stroke="#FFBA78" stroke-width="1.5" stroke-dasharray="35 60 22 70" stroke-linecap="round" opacity="0.5">
+            <animate attributeName="stroke-dashoffset" from="0" to="374" dur="3.1s" repeatCount="indefinite" />
+          </ellipse>
+        </g>
+
+        <!-- Частицы материи с хвостами, падающие по спирали к горизонту событий -->
+        <g fill="#FFF0D6">
+          <circle cx="-128" cy="14" r="1.6">
+            <animate attributeName="cx" values="-150;-62;-150" keyTimes="0;0.95;1" dur="2.8s" repeatCount="indefinite" />
+            <animate attributeName="cy" values="18;6;18" keyTimes="0;0.95;1" dur="2.8s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0;0.95;0" keyTimes="0;0.7;1" dur="2.8s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="135" cy="-12" r="1.4">
+            <animate attributeName="cx" values="155;64;155" keyTimes="0;0.95;1" dur="3.4s" repeatCount="indefinite" />
+            <animate attributeName="cy" values="-16;-5;-16" keyTimes="0;0.95;1" dur="3.4s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0;0.8;0" keyTimes="0;0.7;1" dur="3.4s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="-95" cy="-18" r="1.3">
+            <animate attributeName="cx" values="-130;-60;-130" keyTimes="0;0.95;1" dur="2.3s" repeatCount="indefinite" />
+            <animate attributeName="cy" values="-22;-8;-22" keyTimes="0;0.95;1" dur="2.3s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.65;1" dur="2.3s" repeatCount="indefinite" />
+          </circle>
+        </g>
+      </g>
+
+      <!-- Статус под сингулярностью (как в PageConvert / PageDownload) -->
+      <g transform="translate(0, 122)">
+        <circle cx="-94" cy="-4" r="3" fill="#FF8A38">
+          <animate attributeName="opacity" values="0.35;1;0.35" dur="1.8s" repeatCount="indefinite" />
+        </circle>
+        <text x="6" y="0" font-family="Consolas, &#39;Fira Code&#39;, monospace" font-size="11.5" font-weight="600" fill="#E9E4DA" letter-spacing="2.2" text-anchor="middle">ГОРИЗОНТ СОБЫТИЙ</text>
+      </g>
+    </g>
+
+    <!-- ================================================================= -->
+    <!-- ЛЕВАЯ ИНСТРУМЕНТАЛЬНАЯ ПАНЕЛЬ (Panel + Brackets + Eyebrow)        -->
+    <!-- ================================================================= -->
+    <g transform="translate(32, 72)">
+      <!-- Стеклянная подложка g_P.panel + тонкая рамка g_P.border + верхний блик -->
+      <rect x="0" y="0" width="430" height="236" rx="4" fill="#FFF5E6" fill-opacity="0.03" stroke="#FFF2E0" stroke-opacity="0.10" stroke-width="1" />
+      <rect x="4" y="0" width="422" height="1" fill="url(#topSheen)" />
+
+      <!-- Угловые скобки «видоискателя» Brackets() цвета AccentT() -->
+      <g stroke="#FFBA78" stroke-opacity="0.72" stroke-width="1.4" fill="none">
+        <path d="M -1 9 L -1 -1 L 9 -1" />
+        <path d="M 421 -1 L 431 -1 L 431 9" />
+        <path d="M -1 227 L -1 237 L 9 237" />
+        <path d="M 421 237 L 431 237 L 431 227" />
+      </g>
+
+      <!-- Eyebrow(d, "01", "ПРОФИЛЬ РАЗРАБОТЧИКА") -->
+      <text x="24" y="30" font-family="Consolas, &#39;Fira Code&#39;, monospace" font-size="12" font-weight="600" fill="#FFBA78" letter-spacing="1.5">01</text>
+      <line x1="48" y1="26" x2="62" y2="26" stroke="#88837C" stroke-opacity="0.55" stroke-width="1" />
+      <text x="70" y="30" font-family="Consolas, &#39;Fira Code&#39;, monospace" font-size="12" fill="#88837C" letter-spacing="1.8">РАЗРАБОТЧИК C++ · WINDOWS</text>
+
+      <!-- Крупный заголовок g_FontBig (Segoe UI Light 50px) -->
+      <text x="22" y="92" font-family="&#39;Segoe UI Light&#39;, &#39;Segoe UI&#39;, Arial, sans-serif" font-size="52" font-weight="300" fill="#E9E4DA" letter-spacing="12">QYPXR</text>
+
+      <!-- Подзаголовок с разрядкой DTrack(g_FontH2, AccentT()) -->
+      <text x="25" y="122" font-family="&#39;Segoe UI&#39;, Arial, sans-serif" font-size="16" font-weight="600" fill="#FFBA78" letter-spacing="5.5">DESKTOP ENGINEERING</text>
+
+      <line x1="24" y1="142" x2="406" y2="142" stroke="#FFF2E0" stroke-opacity="0.10" stroke-width="1" />
+
+      <!-- Инструментальная телеметрия -->
+      <text x="24" y="166" font-family="Consolas, &#39;Fira Code&#39;, monospace" font-size="11.5" fill="#88837C" letter-spacing="1.4">ЯДРО И ГРАФИКА</text>
+      <text x="406" y="166" font-family="&#39;Segoe UI&#39;, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#E9E4DA" text-anchor="end">C++17 · Dear ImGui · DirectX 11</text>
+
+      <!-- Кнопка в стиле PrimaryButton() со скошенным пробегающим бликом -->
+      <g transform="translate(24, 182)">
+        <rect x="0" y="0" width="382" height="36" rx="4" fill="#FF8A38" />
+        <rect x="1" y="1" width="380" height="18" rx="3" fill="#FFFFFF" fill-opacity="0.16" />
+        <text x="191" y="23" font-family="&#39;Segoe UI&#39;, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#100D0A" letter-spacing="2.2" text-anchor="middle">АККУРАТНЫЙ СОФТ БЕЗ ЛИШНЕГО ШУМА</text>
+      </g>
+    </g>
   </g>
 
-  <!-- Главный ник и чистая подпись -->
-  <text x="455" y="138" font-family="Segoe UI, Arial, sans-serif" font-weight="900" font-size="48" fill="#FFFFFF" letter-spacing="10" text-anchor="middle">QYPXR</text>
-  <text x="452" y="238" font-family="Consolas, monospace" font-weight="600" font-size="12" fill="#7C5CFF" letter-spacing="4" text-anchor="middle">C++ DEVELOPER // WINDOWS DESKTOP</text>
+  <!-- Внешняя тонкая рамка окна d->AddRect(wp, ws, Col(g_P.border)) -->
+  <rect x="0.5" y="0.5" width="919" height="339" rx="4" fill="none" stroke="#FFF2E0" stroke-opacity="0.12" stroke-width="1" />
 </svg>
