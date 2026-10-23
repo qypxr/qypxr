@@ -1,7 +1,7 @@
 <div align="center">
 
-<!-- Кастомный SVG-интерфейс в стиле «Горизонт событий» (из main.cpp) -->
-<img src="https://raw.githubusercontent.com/qypxr/qypxr/HEAD/space-banner.svg?v=5" width="100%" alt="QYPXR — Горизонт событий" />
+<!-- Верхний баннер-окно -->
+<img src="https://raw.githubusercontent.com/qypxr/qypxr/HEAD/space-banner.svg?v=5" width="100%" alt="QYPXR" />
 
 <br/>
 
@@ -20,9 +20,10 @@
 
 <br/>
 
-### `01` — ОБО МНЕ
-
-Пишу десктопные программы на **C++** для Windows. Люблю, когда у программы аккуратный кастомный интерфейс (собственная отрисовка поверх **Dear ImGui + DirectX 11**, процедурный синтез звуков через `winmm` без внешних файлов, плавная физика частиц) и она делает одну вещь хорошо.
+<!-- Блок «О мне» с фоном -->
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=7,8,11,22,21,23&height=140&section=header&text=%6001%20%C2%B7%20%D0%9E%D0%B1%20%D0%BE%D0%B1%D1%89%D0%B5%D0%BC%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%B5%60&fontSize=16&fontColor=FFBA78&fontAlignY=25&desc=%D0%9F%D0%B8%D1%88%D1%83%20%D0%B4%D0%B5%D1%81%D0%BA%D1%82%D0%BE%D0%BF%D0%BD%D1%8B%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%83%20%D0%BD%D0%B0%20C%2B%2B%20%D0%B4%D0%BB%D1%8F%20Windows.%20%D0%9B%D1%8E%D0%B1%D0%BB%D1%8E%2C%20%D0%BA%D0%BE%D0%B3%D0%B4%D0%B0%20%D1%83%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B%20%D0%B0%D0%BA%D0%BA%D1%83%D1%80%D0%B0%D1%82%D0%BD%D1%8B%D0%B9%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81.&descSize=14&descColor=E9E4DA&descAlignY=60" width="100%" alt="About" />
+</div>
 
 <br/>
 
