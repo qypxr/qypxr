@@ -1,21 +1,24 @@
-
 <div align="center">
 
-<img src="./assets/nebula-banner.svg" width="100%" alt="QYPXR — Beyond the Known" />
+<img src="https://raw.githubusercontent.com/qypxr/qypxr/main/assets/event-horizon.svg" width="100%" alt="QYPXR Space" />
 
 <br/>
 
-<a href="https://github.com/qypxr/QYPXR_METHOD">QYPXR METHOD</a>
-&nbsp; ✦ &nbsp;
-<a href="https://github.com/qypxr/Smart-Grabber">SMART GRABBER</a>
+<p>
+  <samp>C++ DEVELOPER</samp>
+  &nbsp;·&nbsp;
+  <samp>WINDOWS DESKTOP</samp>
+  &nbsp;·&nbsp;
+  <samp>CLEAN ARCHITECTURE</samp>
+</p>
 
-<br/><br/>
-
-<a href="https://youtube.com/@qypxr">YOUTUBE</a>
-&nbsp; ◇ &nbsp;
 <a href="https://t.me/qypxr1">TELEGRAM</a>
 &nbsp; ◇ &nbsp;
-<a href="https://steamcommunity.com/id/qypxr/">STEAM</a>
+<a href="https://www.tiktok.com/@qypxr1">TIKTOK</a>
+&nbsp; ◇ &nbsp;
+<a href="https://www.youtube.com/@qypxr">YOUTUBE</a>
+&nbsp; ◇ &nbsp;
+<a href="https://steamcommunity.com/id/qypxr">STEAM</a>
 
 </div>
 
@@ -25,15 +28,13 @@
 
 <div align="center">
 
-### SOMEWHERE BETWEEN CODE AND THE COSMOS
-
-*Independent developer. Curious mind. Building things one idea at a time.*
+### СЕТЕВОЙ УЗЕЛ // СИГНАЛ ЧИСТЫЙ
 
 </div>
 
 <br/>
 
-## PROJECTS IN ORBIT
+## ПРОЕКТЫ
 
 <table>
 <tr>
@@ -41,18 +42,18 @@
 
 ### ◉ QYPXR METHOD
 
-A C++ desktop project focused on MP4 container workflows, featuring a custom Dear ImGui + DirectX 11 interface.
+Низкоуровневая оптимизация видеоконтейнеров `MP4/MOV` под алгоритмы TikTok без перекодирования.
 
-[EXPLORE PROJECT ↗](https://github.com/qypxr/QYPXR_METHOD)
+<a href="https://github.com/qypxr/QYPXR_METHOD">РЕПОЗИТОРИЙ ↗</a>
 
 </td>
 <td width="50%" valign="top">
 
 ### ◈ SMART GRABBER
 
-A desktop media utility for video downloads, built around `yt-dlp` and FFmpeg.
+Инструмент для загрузки потокового видео с YouTube в разрешении до 4K на базе `yt-dlp` и `FFmpeg`.
 
-[EXPLORE PROJECT ↗](https://github.com/qypxr/Smart-Grabber)
+<a href="https://github.com/qypxr/Smart-Grabber">РЕПОЗИТОРИЙ ↗</a>
 
 </td>
 </tr>
@@ -60,26 +61,24 @@ A desktop media utility for video downloads, built around `yt-dlp` and FFmpeg.
 
 <br/>
 
-## TOOLS OF THE TRADE
+## ТЕХНОЛОГИИ
 
-<div align="center">
-
-<img src="https://img.shields.io/badge/C%2B%2B-10111A?style=flat-square&logo=cplusplus&logoColor=C6A0FF" alt="C++" />
-<img src="https://img.shields.io/badge/DirectX_11-10111A?style=flat-square&logo=directx&logoColor=5BE7FF" alt="DirectX 11" />
-<img src="https://img.shields.io/badge/Dear_ImGui-10111A?style=flat-square&logo=imgui&logoColor=FF8CEB" alt="Dear ImGui" />
-<img src="https://img.shields.io/badge/FFmpeg-10111A?style=flat-square&logo=ffmpeg&logoColor=C6A0FF" alt="FFmpeg" />
-<img src="https://img.shields.io/badge/Windows-10111A?style=flat-square&logo=windows&logoColor=5BE7FF" alt="Windows" />
-
-</div>
+<p>
+  <img src="https://img.shields.io/badge/C%2B%2B-07080B?style=flat-square&logo=cplusplus&logoColor=FF8A38" alt="C++" />
+  <img src="https://img.shields.io/badge/DirectX%2011-07080B?style=flat-square&logo=directx&logoColor=FF8A38" alt="DirectX 11" />
+  <img src="https://img.shields.io/badge/Dear%20ImGui-07080B?style=flat-square&logo=imgui&logoColor=FF8A38" alt="Dear ImGui" />
+  <img src="https://img.shields.io/badge/FFmpeg-07080B?style=flat-square&logo=ffmpeg&logoColor=FF8A38" alt="FFmpeg" />
+  <img src="https://img.shields.io/badge/Windows-07080B?style=flat-square&logo=windows&logoColor=FF8A38" alt="Windows" />
+</p>
 
 <br/>
 
 <div align="center">
 
-*Somewhere between a line of code and a distant star.*
+<img src="https://capsule-render.vercel.app/api?type=rect&height=1&color=0:07080B,50:FF8A38,100:07080B" width="100%" alt="" />
 
-<img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:050711,35:5BE7FF,65:8B5CFF,100:FF8CEB" width="100%" alt="" />
+<br/>
 
-<sub><code>Q Y P X R</code> &nbsp; / &nbsp; KEEP LOOKING UP</sub>
+<sub><code>[ EVENT HORIZON // QYPXR ]</code></sub>
 
 </div>
