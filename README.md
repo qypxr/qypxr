@@ -1,7 +1,7 @@
 <div align="center">
 
-<!-- Кастомная векторная чёрная дыра (файл space-banner.svg в корне репозитория) -->
-<img src="./space-banner.svg" width="100%" alt="QYPXR Space Banner" />
+<!-- Прямая ссылка на SVG-баннер, которая работает и в репозитории, и на главной профиля -->
+<img src="https://raw.githubusercontent.com/qypxr/qypxr/HEAD/space-banner.svg" width="100%" alt="QYPXR Space Banner" />
 
 <br/>
 
