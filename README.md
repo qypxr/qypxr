@@ -1,39 +1,40 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=venom&height=220&color=0:08090D,45:17110D,100:FF8A38&text=QYPXR&fontColor=F4EDE3&fontSize=72&fontAlignY=42&desc=ENGINEERING%20THE%20UNEXPECTED&descAlignY=64&descSize=14&animation=fadeIn" width="100%" alt="QYPXR — Engineering the Unexpected" />
+<img src="./assets/event-horizon.svg" width="100%" alt="QYPXR — Event Horizon, animated black hole in deep space" />
 
 <br/>
 
-### `INDEPENDENT DEVELOPER` · `C++` · `TOOLS & EXPERIMENTS`
+<p>
+  <samp>INDEPENDENT DEVELOPER</samp>
+  &nbsp;·&nbsp;
+  <samp>DESKTOP SOFTWARE</samp>
+  &nbsp;·&nbsp;
+  <samp>CREATING IN THE DARK</samp>
+</p>
 
-*Building useful software with a little bit of event-horizon energy.*
-
-<br/>
-
-[![GitHub](https://img.shields.io/badge/GitHub-qypxr-111111?style=for-the-badge&logo=github&logoColor=F4A261)](https://github.com/qypxr)
-[![YouTube](https://img.shields.io/badge/YouTube-channel-111111?style=for-the-badge&logo=youtube&logoColor=FF6B35)](https://youtube.com/@qypxr)
-[![Telegram](https://img.shields.io/badge/Telegram-contact-111111?style=for-the-badge&logo=telegram&logoColor=F4A261)](https://t.me/qypxr1)
-[![Steam](https://img.shields.io/badge/Steam-profile-111111?style=for-the-badge&logo=steam&logoColor=F4A261)](https://steamcommunity.com/id/qypxr/)
+<a href="https://youtube.com/@qypxr">YOUTUBE</a>
+&nbsp; ◇ &nbsp;
+<a href="https://t.me/qypxr1">TELEGRAM</a>
+&nbsp; ◇ &nbsp;
+<a href="https://steamcommunity.com/id/qypxr/">STEAM</a>
 
 </div>
 
+<br/>
+
 ---
 
-## `01` — ABOUT
+<div align="center">
 
-I’m **qypxr** — an independent developer interested in desktop software, media tooling, and polished interfaces.
+### SOMEWHERE BETWEEN CODE AND THE COSMOS
 
-I like building tools that feel as considered as they work: focused functionality, custom UI, and attention to the details.
+*Quiet interfaces. Strange ideas. Things built from nothing.*
 
-```text
-CURRENT FOCUS
-├─ Desktop applications
-├─ Video and media utilities
-├─ C++ / Dear ImGui / DirectX 11
-└─ Interface design — “Event Horizon”
-```
+</div>
 
-## `02` — PROJECTS
+<br/>
+
+## TRANSMISSIONS
 
 <table>
 <tr>
@@ -41,76 +42,45 @@ CURRENT FOCUS
 
 ### ◉ QYPXR METHOD
 
-**Video container tooling · C++**
+A C++ desktop tool for MP4 container workflows, wrapped in a custom **Event Horizon** interface.
 
-A desktop tool for working with MP4/MOV video containers, built around a custom Dear ImGui interface and DirectX 11 rendering.
-
-**Highlights**
-- Custom “Event Horizon” interface
-- Built-in file picker and processing controls
-- Designed around a sparse container-processing workflow
-
-[**↗ Explore repository**](https://github.com/qypxr/QYPXR_METHOD)
+<a href="https://github.com/qypxr/QYPXR_METHOD">OPEN PROJECT ↗</a>
 
 </td>
 <td width="50%" valign="top">
 
 ### ◈ SMART GRABBER
 
-**Video downloader · C++**
+A desktop media utility built around video and audio downloads, with `yt-dlp` and FFmpeg.
 
-A desktop utility for downloading video or audio, with stream selection and download tooling.
-
-**Highlights**
-- Video and audio stream selection
-- Download queue and multi-part downloads
-- Integration with `yt-dlp` and FFmpeg
-
-[**↗ Explore repository**](https://github.com/qypxr/Smart-Grabber)
+<a href="https://github.com/qypxr/Smart-Grabber">OPEN PROJECT ↗</a>
 
 </td>
 </tr>
 </table>
 
-## `03` — TOOLKIT
+<br/>
 
-<div align="center">
+## THE TOOLKIT
 
-![C++](https://img.shields.io/badge/C%2B%2B-111111?style=flat-square&logo=cplusplus&logoColor=F4A261)
-![Windows](https://img.shields.io/badge/Windows-111111?style=flat-square&logo=windows&logoColor=F4A261)
-![DirectX 11](https://img.shields.io/badge/DirectX%2011-111111?style=flat-square&logo=directx&logoColor=F4A261)
-![Dear ImGui](https://img.shields.io/badge/Dear%20ImGui-111111?style=flat-square&logo=imgui&logoColor=F4A261)
-![FFmpeg](https://img.shields.io/badge/FFmpeg-111111?style=flat-square&logo=ffmpeg&logoColor=F4A261)
-![Python](https://img.shields.io/badge/Python-111111?style=flat-square&logo=python&logoColor=F4A261)
-
-</div>
-
-## `04` — GITHUB SIGNAL
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=qypxr&show_icons=true&hide_border=true&bg_color=0D0D0F&title_color=FF9B52&icon_color=FF9B52&text_color=E8E1D8&rank_icon=github" alt="GitHub statistics" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=qypxr&layout=compact&hide_border=true&bg_color=0D0D0F&title_color=FF9B52&text_color=E8E1D8" alt="Most used languages" />
+<p>
+  <img src="https://img.shields.io/badge/C%2B%2B-0B0C10?style=flat-square&logo=cplusplus&logoColor=FFBA78" alt="C++" />
+  <img src="https://img.shields.io/badge/DirectX%2011-0B0C10?style=flat-square&logo=directx&logoColor=FFBA78" alt="DirectX 11" />
+  <img src="https://img.shields.io/badge/Dear%20ImGui-0B0C10?style=flat-square&logo=imgui&logoColor=FFBA78" alt="Dear ImGui" />
+  <img src="https://img.shields.io/badge/FFmpeg-0B0C10?style=flat-square&logo=ffmpeg&logoColor=FFBA78" alt="FFmpeg" />
+  <img src="https://img.shields.io/badge/Windows-0B0C10?style=flat-square&logo=windows&logoColor=FFBA78" alt="Windows" />
+</p>
 
 <br/>
 
-<img src="https://streak-stats.demolab.com?user=qypxr&hide_border=true&background=0D0D0F&ring=FF9B52&fire=FF9B52&currStreakLabel=FF9B52&sideLabels=E8E1D8&currStreakNum=E8E1D8&sideNums=E8E1D8&dates=8C8580" alt="GitHub contribution streak" />
-
-</div>
-
-## `05` — FIND ME
-
-- **GitHub:** [@qypxr](https://github.com/qypxr)
-- **YouTube:** [@qypxr](https://youtube.com/@qypxr)
-- **Telegram:** [@qypxr1](https://t.me/qypxr1)
-- **Steam:** [qypxr](https://steamcommunity.com/id/qypxr/)
-
----
-
 <div align="center">
 
-<sub>QYPXR · BUILT IN THE SHADOW OF THE EVENT HORIZON</sub>
+<sub>NO NOISE. JUST SIGNAL.</sub>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:FF8A38,50:17110D,100:08090D" width="100%" alt="" />
+<br/><br/>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:07080B,45:FF8A38,100:07080B" width="100%" alt="" />
+
+<sub><code>Q Y P X R</code> &nbsp; / &nbsp; LOST IN THE EVENT HORIZON</sub>
 
 </div>
