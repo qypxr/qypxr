@@ -1,16 +1,15 @@
+
 <div align="center">
 
-<img src="./assets/event-horizon.svg" width="100%" alt="QYPXR — Event Horizon, animated black hole in deep space" />
+<img src="./assets/nebula-banner.svg" width="100%" alt="QYPXR — Beyond the Known" />
 
 <br/>
 
-<p>
-  <samp>INDEPENDENT DEVELOPER</samp>
-  &nbsp;·&nbsp;
-  <samp>DESKTOP SOFTWARE</samp>
-  &nbsp;·&nbsp;
-  <samp>CREATING IN THE DARK</samp>
-</p>
+<a href="https://github.com/qypxr/QYPXR_METHOD">QYPXR METHOD</a>
+&nbsp; ✦ &nbsp;
+<a href="https://github.com/qypxr/Smart-Grabber">SMART GRABBER</a>
+
+<br/><br/>
 
 <a href="https://youtube.com/@qypxr">YOUTUBE</a>
 &nbsp; ◇ &nbsp;
@@ -28,13 +27,13 @@
 
 ### SOMEWHERE BETWEEN CODE AND THE COSMOS
 
-*Quiet interfaces. Strange ideas. Things built from nothing.*
+*Independent developer. Curious mind. Building things one idea at a time.*
 
 </div>
 
 <br/>
 
-## TRANSMISSIONS
+## PROJECTS IN ORBIT
 
 <table>
 <tr>
@@ -42,18 +41,18 @@
 
 ### ◉ QYPXR METHOD
 
-A C++ desktop tool for MP4 container workflows, wrapped in a custom **Event Horizon** interface.
+A C++ desktop project focused on MP4 container workflows, featuring a custom Dear ImGui + DirectX 11 interface.
 
-<a href="https://github.com/qypxr/QYPXR_METHOD">OPEN PROJECT ↗</a>
+[EXPLORE PROJECT ↗](https://github.com/qypxr/QYPXR_METHOD)
 
 </td>
 <td width="50%" valign="top">
 
 ### ◈ SMART GRABBER
 
-A desktop media utility built around video and audio downloads, with `yt-dlp` and FFmpeg.
+A desktop media utility for video downloads, built around `yt-dlp` and FFmpeg.
 
-<a href="https://github.com/qypxr/Smart-Grabber">OPEN PROJECT ↗</a>
+[EXPLORE PROJECT ↗](https://github.com/qypxr/Smart-Grabber)
 
 </td>
 </tr>
@@ -61,26 +60,26 @@ A desktop media utility built around video and audio downloads, with `yt-dlp` an
 
 <br/>
 
-## THE TOOLKIT
+## TOOLS OF THE TRADE
 
-<p>
-  <img src="https://img.shields.io/badge/C%2B%2B-0B0C10?style=flat-square&logo=cplusplus&logoColor=FFBA78" alt="C++" />
-  <img src="https://img.shields.io/badge/DirectX%2011-0B0C10?style=flat-square&logo=directx&logoColor=FFBA78" alt="DirectX 11" />
-  <img src="https://img.shields.io/badge/Dear%20ImGui-0B0C10?style=flat-square&logo=imgui&logoColor=FFBA78" alt="Dear ImGui" />
-  <img src="https://img.shields.io/badge/FFmpeg-0B0C10?style=flat-square&logo=ffmpeg&logoColor=FFBA78" alt="FFmpeg" />
-  <img src="https://img.shields.io/badge/Windows-0B0C10?style=flat-square&logo=windows&logoColor=FFBA78" alt="Windows" />
-</p>
+<div align="center">
+
+<img src="https://img.shields.io/badge/C%2B%2B-10111A?style=flat-square&logo=cplusplus&logoColor=C6A0FF" alt="C++" />
+<img src="https://img.shields.io/badge/DirectX_11-10111A?style=flat-square&logo=directx&logoColor=5BE7FF" alt="DirectX 11" />
+<img src="https://img.shields.io/badge/Dear_ImGui-10111A?style=flat-square&logo=imgui&logoColor=FF8CEB" alt="Dear ImGui" />
+<img src="https://img.shields.io/badge/FFmpeg-10111A?style=flat-square&logo=ffmpeg&logoColor=C6A0FF" alt="FFmpeg" />
+<img src="https://img.shields.io/badge/Windows-10111A?style=flat-square&logo=windows&logoColor=5BE7FF" alt="Windows" />
+
+</div>
 
 <br/>
 
 <div align="center">
 
-<sub>NO NOISE. JUST SIGNAL.</sub>
+*Somewhere between a line of code and a distant star.*
 
-<br/><br/>
+<img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:050711,35:5BE7FF,65:8B5CFF,100:FF8CEB" width="100%" alt="" />
 
-<img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:07080B,45:FF8A38,100:07080B" width="100%" alt="" />
-
-<sub><code>Q Y P X R</code> &nbsp; / &nbsp; LOST IN THE EVENT HORIZON</sub>
+<sub><code>Q Y P X R</code> &nbsp; / &nbsp; KEEP LOOKING UP</sub>
 
 </div>
