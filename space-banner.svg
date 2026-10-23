@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280">
+  <defs>
+    <radialGradient id="void" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#161B22" />
+      <stop offset="55%" stop-color="#0D1117" />
+      <stop offset="100%" stop-color="#05070A" />
+    </radialGradient>
+
+    <radialGradient id="accretion" cx="50%" cy="50%" r="50%">
+      <stop offset="28%" stop-color="#000000" stop-opacity="1" />
+      <stop offset="34%" stop-color="#7C5CFF" stop-opacity="0.95" />
+      <stop offset="48%" stop-color="#8A6BFF" stop-opacity="0.45" />
+      <stop offset="72%" stop-color="#46C8E6" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="photonRing" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0D1117" stop-opacity="0" />
+      <stop offset="18%" stop-color="#7C5CFF" stop-opacity="0.85" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="1" />
+      <stop offset="82%" stop-color="#8A6BFF" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="16" />
+    </filter>
+  </defs>
+
+  <!-- Глубокий космический фон -->
+  <rect width="900" height="280" rx="14" fill="url(#void)" stroke="#161B22" stroke-width="2" />
+
+  <!-- Мерцающие звёзды (SMIL-анимация, которая работает внутри GitHub) -->
+  <circle cx="75" cy="45" r="1.4" fill="#ffffff">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="3.5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="140" cy="190" r="2" fill="#8A6BFF">
+    <animate attributeName="opacity" values="0.9;0.2;0.9" dur="2.8s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="210" cy="70" r="1.2" fill="#ffffff">
+    <animate attributeName="opacity" values="0.3;0.95;0.3" dur="4.2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="95" cy="240" r="1.6" fill="#46C8E6">
+    <animate attributeName="opacity" values="0.15;0.9;0.15" dur="3.1s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="290" cy="35" r="1.3" fill="#ffffff">
+    <animate attributeName="opacity" values="0.8;0.2;0.8" dur="4.6s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="330" cy="230" r="1.2" fill="#8A6BFF">
+    <animate attributeName="opacity" values="0.2;0.85;0.2" dur="3.9s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="620" cy="50" r="1.6" fill="#46C8E6">
+    <animate attributeName="opacity" values="0.9;0.25;0.9" dur="3.3s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="680" cy="220" r="1.3" fill="#ffffff">
+    <animate attributeName="opacity" values="0.25;1;0.25" dur="4.1s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="760" cy="85" r="2.2" fill="#8A6BFF">
+    <animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.9s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="830" cy="175" r="1.2" fill="#ffffff">
+    <animate attributeName="opacity" values="0.85;0.15;0.85" dur="3.7s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="790" cy="245" r="1.6" fill="#46C8E6">
+    <animate attributeName="opacity" values="0.2;0.9;0.2" dur="4.8s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="50" cy="130" r="1.4" fill="#ffffff">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="3.4s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="855" cy="55" r="1.5" fill="#46C8E6">
+    <animate attributeName="opacity" values="0.9;0.2;0.9" dur="4.0s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Гексагоны (Design System v2.0) -->
+  <polygon points="80,90 92,83 104,90 104,104 92,111 80,104" fill="none" stroke="#7C5CFF" stroke-width="1" opacity="0.25" />
+  <polygon points="800,190 815,181 830,190 830,208 815,217 800,208" fill="none" stroke="#8A6BFF" stroke-width="1" opacity="0.3" />
+
+  <!-- Чёрная дыра и гравитационная линза -->
+  <g>
+    <circle cx="450" cy="136" r="128" fill="url(#accretion)" filter="url(#softGlow)">
+      <animate attributeName="r" values="122;132;122" dur="5s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Дуга гравитационного линзирования -->
+    <ellipse cx="450" cy="136" rx="96" ry="62" fill="none" stroke="#7C5CFF" stroke-width="2.5" opacity="0.55" filter="url(#glow)" />
+    <ellipse cx="450" cy="136" rx="76" ry="52" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.45" />
+
+    <!-- Горизонт событий (чёрная сфера) -->
+    <circle cx="450" cy="136" r="54" fill="#030406" stroke="#7C5CFF" stroke-width="1.8" filter="url(#glow)" />
+    <circle cx="450" cy="136" r="51" fill="#000000" />
+
+    <!-- Аккреционный диск спереди -->
+    <ellipse cx="450" cy="142" rx="225" ry="20" fill="none" stroke="url(#photonRing)" stroke-width="5.5" filter="url(#glow)" transform="rotate(-7 450 136)" />
+    <ellipse cx="450" cy="142" rx="168" ry="11" fill="none" stroke="#ffffff" stroke-width="1.8" opacity="0.9" transform="rotate(-7 450 136)" />
+  </g>
+
+  <!-- Текст поверх горизонта событий -->
+  <text x="457" y="148" font-family="Segoe UI, Arial, sans-serif" font-weight="900" font-size="62" fill="#ffffff" letter-spacing="14" text-anchor="middle" filter="url(#glow)">QYPXR</text>
+  <text x="457" y="148" font-family="Segoe UI, Arial, sans-serif" font-weight="900" font-size="62" fill="#ffffff" letter-spacing="14" text-anchor="middle">QYPXR</text>
+  <text x="452" y="244" font-family="Consolas, monospace" font-weight="600" font-size="13" fill="#8A6BFF" letter-spacing="5" text-anchor="middle" opacity="0.9">C++ DESKTOP // DEEP SPACE ARCHITECTURE</text>
+</svg>
