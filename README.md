@@ -1,7 +1,6 @@
 <div align="center">
 
-<img src="./assets/event-horizon.svg" width="100%" alt="QYPXR — Event Horizon, animated black hole in deep space" />
-
+<img src="./event-horizon.svg" width="100%" alt="QYPXR — Event Horizon, animated black hole in deep space" />
 <br/>
 
 <p>
