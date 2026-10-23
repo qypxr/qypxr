@@ -1,63 +1,82 @@
 <div align="center">
 
-<!-- Космический шапка-баннер: тёмный переход в стиле горизонта событий чёрной дыры -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,3,10,20&height=220&section=header&text=QYPXR&fontSize=80&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=%E2%80%A2%20DEEP%20SPACE%20DEVELOPMENT%20%E2%80%A2&descSize=18&descAlignY=65" width="100%" alt="QYPXR" />
+<!-- Кастомная векторная чёрная дыра (файл space-banner.svg в корне репозитория) -->
+<img src="./space-banner.svg" width="100%" alt="QYPXR Space Banner" />
+
+<br/>
 
 <a href="https://github.com/qypxr">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1200&color=7C5CFF&center=true&vCenter=true&width=560&lines=C%2B%2B+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA;%D0%9F%D0%B8%D1%88%D1%83+%D0%B4%D0%B5%D1%81%D0%BA%D1%82%D0%BE%D0%BF%D0%BD%D1%8B%D0%B9+%D1%81%D0%BE%D1%84%D1%82;%D0%A1%D0%B2%D0%BE%D1%81%D0%B4%D0%B8%D1%88%D1%83+%D0%BA%D0%BE%D0%B4+%D0%B2+%D0%B3%D0%BB%D1%83%D0%B1%D0%BE%D0%BA%D0%BE%D0%BC+%D0%BA%D0%BE%D1%81%D0%BC%D0%BE%D1%81%D0%B5" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1400&color=8A6BFF&center=true&vCenter=true&width=600&lines=%D0%9D%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9+C%2B%2B+%D0%B8+%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0+%D0%B1%D0%B5%D0%B7+%D0%BB%D0%B8%D1%88%D0%BD%D0%B5%D0%B3%D0%BE+%D1%88%D1%83%D0%BC%D0%B0;%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5+%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D1%8B+%D0%BD%D0%B0+Dear+ImGui;%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0+%D1%81+%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B0%D0%BC%D0%B8+%D0%B8+%D0%B1%D0%B8%D0%BD%D0%B0%D1%80%D0%BD%D1%8B%D0%BC%D0%B8+%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC%D0%B8" alt="Typing SVG" />
 </a>
 
-<br/><br/>
+<br/>
 
-[![Telegram](https://img.shields.io/badge/Telegram-@qypxr1-0D1117?style=for-the-badge&logo=telegram&logoColor=7C5CFF)](https://t.me/qypxr1)
-[![TikTok](https://img.shields.io/badge/TikTok-@qypxr1-0D1117?style=for-the-badge&logo=tiktok&logoColor=7C5CFF)](https://www.tiktok.com/@qypxr1)
-[![YouTube](https://img.shields.io/badge/YouTube-@qypxr-0D1117?style=for-the-badge&logo=youtube&logoColor=7C5CFF)](https://www.youtube.com/@qypxr)
-[![Steam](https://img.shields.io/badge/Steam-qypxr-0D1117?style=for-the-badge&logo=steam&logoColor=7C5CFF)](https://steamcommunity.com/id/qypxr)
+[![Telegram](https://img.shields.io/badge/Telegram-@qypxr1-0D1117?style=for-the-badge&logo=telegram&logoColor=8A6BFF&labelColor=161B22)](https://t.me/qypxr1)
+[![TikTok](https://img.shields.io/badge/TikTok-@qypxr1-0D1117?style=for-the-badge&logo=tiktok&logoColor=8A6BFF&labelColor=161B22)](https://www.tiktok.com/@qypxr1)
+[![YouTube](https://img.shields.io/badge/YouTube-@qypxr-0D1117?style=for-the-badge&logo=youtube&logoColor=8A6BFF&labelColor=161B22)](https://www.youtube.com/@qypxr)
+[![Steam](https://img.shields.io/badge/Steam-qypxr-0D1117?style=for-the-badge&logo=steam&logoColor=8A6BFF&labelColor=161B22)](https://steamcommunity.com/id/qypxr)
 
 </div>
 
----
+<br/>
 
-## 🌌 Обо мне
+<div align="center">
+  <kbd>✦ С И С Т Е М А &nbsp; И &nbsp; П Р О Е К Т Ы ✦</kbd>
+</div>
 
-> *«В безмолвии глубокого космоса каждый байт имеет значение, а код работает так же точно, как гравитация».*
-
-Пишу системные и десктопные приложения на **C++** для Windows. Фокусируюсь на строгой архитектуре, высокой производительности и чистом интерфейсе (Dear ImGui). Превращаю сложные задачи в быстрые, автономные и надёжные программы.
-
----
-
-## ⚡ Системные модули (Проекты)
+<br/>
 
 <div align="center">
 
 <a href="https://github.com/qypxr/QYPXR_METHOD">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=qypxr&repo=QYPXR_METHOD&theme=tokyonight&hide_border=true" alt="QYPXR METHOD" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=qypxr&repo=QYPXR_METHOD&bg_color=0D1117&title_color=7C5CFF&text_color=c9d1d9&icon_color=8A6BFF&border_color=161B22&border_radius=10" alt="QYPXR METHOD" />
 </a>
+&nbsp;
 <a href="https://github.com/qypxr/Smart-Grabber">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=qypxr&repo=Smart-Grabber&theme=tokyonight&hide_border=true" alt="Smart Grabber" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=qypxr&repo=Smart-Grabber&bg_color=0D1117&title_color=7C5CFF&text_color=c9d1d9&icon_color=8A6BFF&border_color=161B22&border_radius=10" alt="Smart Grabber" />
 </a>
 
 </div>
 
-| Проект | Назначение & Технологии |
-| :--- | :--- |
-| 🎬 **[QYPXR METHOD](https://github.com/qypxr/QYPXR_METHOD)** | Инструмент глубокой оптимизации видеопотока для TikTok: перетаскивание файлов, установка целевого FPS и перестройка структуры MP4/MOV на лету без потери качества и лишнего перекодирования. |
-| ⬇️ **[Smart Grabber](https://github.com/qypxr/Smart-Grabber)** | Автономный загрузчик контента высокой чёткости (вплоть до 4K) с интерфейсом на Windows. Использует связку `yt-dlp` и `FFmpeg` для максимальной эффективности. |
+<br/>
 
----
+<table align="center" width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center">🪐 <a href="https://github.com/qypxr/QYPXR_METHOD">QYPXR METHOD</a></h3>
+      <p align="center">
+        Низкоуровневая оптимизация видеоконтейнеров <code>MP4/MOV</code> под алгоритмы TikTok. Пересборка внутренней структуры файла и таймингов под целевой FPS напрямую, без перекодирования и потери битрейта.
+      </p>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Core-C++17-0D1117?style=flat-square&logo=cplusplus&logoColor=7C5CFF&labelColor=161B22" />
+        <img src="https://img.shields.io/badge/UI-Dear_ImGui-0D1117?style=flat-square&Color=7C5CFF&labelColor=161B22" />
+        <img src="https://img.shields.io/badge/Engine-Sparse_MP4-0D1117?style=flat-square&labelColor=161B22" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center">☄️ <a href="https://github.com/qypxr/Smart-Grabber">Smart Grabber</a></h3>
+      <p align="center">
+        Десктопная станция для выгрузки потокового видео с YouTube в разрешении вплоть до <code>4K Ultra HD</code>. Быстрый кастомный интерфейс поверх <code>yt-dlp</code> и <code>FFmpeg</code> со склейкой потоков на лету.
+      </p>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Core-C++-0D1117?style=flat-square&logo=cplusplus&logoColor=7C5CFF&labelColor=161B22" />
+        <img src="https://img.shields.io/badge/Media-FFmpeg_%2B_yt--dlp-0D1117?style=flat-square&labelColor=161B22" />
+        <img src="https://img.shields.io/badge/Platform-Windows-0D1117?style=flat-square&logo=windows&logoColor=8A6BFF&labelColor=161B22" />
+      </p>
+    </td>
+  </tr>
+</table>
 
-## 🧰 Бортовой компьютер (Технологический стек)
+<br/>
 
 <div align="center">
-
-<img src="https://skillicons.dev/icons?i=cpp,visualstudio,windows,git,github&theme=dark" alt="Стек" />
-
+  <kbd>✦ А Р С Е Н А Л ✦</kbd>
+  <br/><br/>
+  <img src="https://skillicons.dev/icons?i=cpp,py,visualstudio,windows,git,github&theme=dark" alt="Стек" />
 </div>
 
-<br>
+<br/>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=qypxr&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
+  <sub><code>[ EVENT HORIZON // QYPXR ]</code></sub>
 </div>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=20,10,3,0&height=100&section=footer" width="100%" alt="" />
