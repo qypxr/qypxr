@@ -1,4 +1,4 @@
-<div align="center">
+[<div align="center">
 
 <!-- Верхний баннер-окно -->
 <img src="https://raw.githubusercontent.com/qypxr/qypxr/HEAD/space-banner.svg?v=5" width="100%" alt="QYPXR" />
@@ -90,3 +90,4 @@
 <div align="center">
   <sub><code>QYPXR  ·  INTERFACES IN EVENT HORIZON STYLE  ·  V2.0</code></sub>
 </div>
+](https://github.com/qypxr)
