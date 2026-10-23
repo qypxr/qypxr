@@ -1,84 +1,50 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/qypxr/qypxr/main/assets/event-horizon.svg" width="100%" alt="QYPXR Space" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=220&section=header&text=QYPXR&fontSize=80&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=%D0%9F%D0%B8%D1%88%D1%83%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B%20%D0%BD%D0%B0%20C%2B%2B&descSize=22&descAlignY=62" width="100%" alt="QYPXR" />
 
-<br/>
+<a href="https://github.com/qypxr">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1200&color=46C8E6&center=true&vCenter=true&width=520&lines=C%2B%2B+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA;%D0%94%D0%B5%D0%BB%D0%B0%D1%8E+%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B+%D0%B4%D0%BB%D1%8F+Windows;%D0%90%D0%BA%D0%BA%D1%83%D1%80%D0%B0%D1%82%D0%BD%D1%8B%D0%B9+%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81+%D0%BD%D0%B0+Dear+ImGui" alt="Typing SVG" />
+</a>
 
-<p>
-  <samp>C++ DEVELOPER</samp>
-  &nbsp;·&nbsp;
-  <samp>WINDOWS DESKTOP</samp>
-  &nbsp;·&nbsp;
-  <samp>CLEAN ARCHITECTURE</samp>
-</p>
+<br/><br/>
 
-<a href="https://t.me/qypxr1">TELEGRAM</a>
-&nbsp; ◇ &nbsp;
-<a href="https://www.tiktok.com/@qypxr1">TIKTOK</a>
-&nbsp; ◇ &nbsp;
-<a href="https://www.youtube.com/@qypxr">YOUTUBE</a>
-&nbsp; ◇ &nbsp;
-<a href="https://steamcommunity.com/id/qypxr">STEAM</a>
+[![Telegram](https://img.shields.io/badge/Telegram-@qypxr1-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/qypxr1)
+[![TikTok](https://img.shields.io/badge/TikTok-@qypxr1-FF4F8B?style=for-the-badge&logo=tiktok&logoColor=white)](https://www.tiktok.com/@qypxr1)
+[![YouTube](https://img.shields.io/badge/YouTube-@qypxr-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@qypxr)
+[![Steam](https://img.shields.io/badge/Steam-qypxr-171A21?style=for-the-badge&logo=steam&logoColor=white)](https://steamcommunity.com/id/qypxr)
 
 </div>
-
-<br/>
 
 ---
 
-<div align="center">
+## 👋 Обо мне
 
-### СЕТЕВОЙ УЗЕЛ // СИГНАЛ ЧИСТЫЙ
+Пишу десктопные программы на **C++** для Windows. Люблю, когда у программы аккуратный интерфейс и она делает одну вещь хорошо.
 
-</div>
-
-<br/>
-
-## ПРОЕКТЫ
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### ◉ QYPXR METHOD
-
-Низкоуровневая оптимизация видеоконтейнеров `MP4/MOV` под алгоритмы TikTok без перекодирования.
-
-<a href="https://github.com/qypxr/QYPXR_METHOD">РЕПОЗИТОРИЙ ↗</a>
-
-</td>
-<td width="50%" valign="top">
-
-### ◈ SMART GRABBER
-
-Инструмент для загрузки потокового видео с YouTube в разрешении до 4K на базе `yt-dlp` и `FFmpeg`.
-
-<a href="https://github.com/qypxr/Smart-Grabber">РЕПОЗИТОРИЙ ↗</a>
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-## ТЕХНОЛОГИИ
-
-<p>
-  <img src="https://img.shields.io/badge/C%2B%2B-07080B?style=flat-square&logo=cplusplus&logoColor=FF8A38" alt="C++" />
-  <img src="https://img.shields.io/badge/DirectX%2011-07080B?style=flat-square&logo=directx&logoColor=FF8A38" alt="DirectX 11" />
-  <img src="https://img.shields.io/badge/Dear%20ImGui-07080B?style=flat-square&logo=imgui&logoColor=FF8A38" alt="Dear ImGui" />
-  <img src="https://img.shields.io/badge/FFmpeg-07080B?style=flat-square&logo=ffmpeg&logoColor=FF8A38" alt="FFmpeg" />
-  <img src="https://img.shields.io/badge/Windows-07080B?style=flat-square&logo=windows&logoColor=FF8A38" alt="Windows" />
-</p>
-
-<br/>
+## 🛠 Мои проекты
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&height=1&color=0:07080B,50:FF8A38,100:07080B" width="100%" alt="" />
-
-<br/>
-
-<sub><code>[ EVENT HORIZON // QYPXR ]</code></sub>
+<a href="https://github.com/qypxr/QYPXR_METHOD">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=qypxr&repo=QYPXR_METHOD&theme=radical&hide_border=true" alt="QYPXR METHOD" />
+</a>
+<a href="https://github.com/qypxr/Smart-Grabber">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=qypxr&repo=Smart-Grabber&theme=radical&hide_border=true" alt="Smart Grabber" />
+</a>
 
 </div>
+
+| Проект | Что делает |
+|---|---|
+| 🎬 **[QYPXR METHOD](https://github.com/qypxr/QYPXR_METHOD)** | Оптимизатор видео для TikTok: перетаскиваешь MP4/MOV, задаёшь целевой FPS, и программа перестраивает структуру файла без перекодирования |
+| ⬇️ **[Smart Grabber](https://github.com/qypxr/Smart-Grabber)** | Скачивание видео с YouTube в высоком качестве, вплоть до 4K, с красивым интерфейсом. Использует yt-dlp и FFmpeg |
+
+## 🧰 Стек
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=cpp,visualstudio,windows,git,github&theme=dark" alt="Стек" />
+
+</div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=100&section=footer" width="100%" alt="" />
