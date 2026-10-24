@@ -9,15 +9,8 @@
 
 </div>
 
-## Проекты
+<img src="h_projects.svg" width="100%" alt="Проекты" />
 
-| | |
-|---|---|
-| 🎬 **[QYPXR METHOD](https://github.com/qypxr/QYPXR_METHOD)** | Оптимизатор видео для TikTok |
-| ⬇️ **[Smart Grabber](https://github.com/qypxr/Smart-Grabber)** | Скачивание видео с YouTube до 4K |
+<a href="https://github.com/qypxr/QYPXR_METHOD"><img src="card_qypxr_method.svg" width="100%" alt="QYPXR METHOD" /></a>
 
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=cpp,visualstudio,windows,git&theme=dark" alt="Стек" />
-
-</div>
+<a href="https://github.com/qypxr/Smart-Grabber"><img src="card_smart_grabber.svg" width="100%" alt="Smart Grabber" /></a>
